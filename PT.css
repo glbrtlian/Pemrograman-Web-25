@@ -1,0 +1,208 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #222; /* hitam ringan */
+    background-color: #fff; /* putih */
+    transition: background 0.4s ease, color 0.4s ease; /* smooth color change */
+}
+
+/* Reusable Button */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease; /* smooth hover */
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: #007BFF; /* biru */
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: #C00000; /* merah */
+    border: 1.5px solid #000000;
+}
+
+.btn--secondary:hover {
+    background-color: #C00000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Header Casual */
+.site-header {
+    background: #007BFF; /* biru polos */
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #C00000; /* garis merah */
+    transition: all 0.5s ease; /* smooth resize/scroll */
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.site-title:hover {
+    color: #000000; /* efek hover emas biar casual stylish */
+}
+
+/* Navigation */
+.main-nav {
+    margin-top: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-list li a {
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #000000;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Section Casual */
+.section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fafafa; /* abu lembut */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    background: #f0f0f0;
+    transform: scale(1.01);
+}
+
+.section-title {
+    color: #C00000; /* merah */
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover {
+    color: #007BFF; /* biru saat hover */
+}
+
+/* Features */
+.section--features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+/* Card Casual */
+.card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    color: #007BFF; /* biru */
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.card-title:hover {
+    color: #C00000; /* merah */
+}
+
+.card-text {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Footer Casual */
+.site-footer {
+    background: #111; /* hitam */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.site-footer a {
+    margin-top: 0.4rem;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #C00000;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
